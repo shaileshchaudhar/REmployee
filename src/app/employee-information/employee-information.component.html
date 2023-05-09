@@ -1,0 +1,88 @@
+<div class="container">
+    <h1 style="margin-top: 30px;text-align: center"> EmployeeInformation</h1>
+    <form [formGroup]="EmployeeForm">
+    <div class="row">
+        <div class="col-md-4">
+            <mat-form-field class="example-full-width" appearance="fill" style="width:100%; margin-top: 60px;">
+            <mat-label>EmployeefirstName</mat-label>
+            <input matInput type="text" formControlName="EmployeeFirstname">
+            <mat-error>EmployeeFirstname is required</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <mat-form-field class="example-full-width" appearance="fill" style="width:100%;margin-top:60px;">
+                <mat-label> EmployeeMiddlename</mat-label>
+                <input matInput type="text" formControlName="EmployeeMiddlename">
+                <mat-error>EmployeeMiddleName is required</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <mat-form-field class="example-full-width" appearance="fill" style="width:100%;margin-top:60px;">
+            <mat-label>EmployeeLastName</mat-label>
+            <input matInput type="text" formControlName="EmployeeLastname">
+             <mat-error>EmployeeLastname is required</mat-error>   
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <mat-form-field class="example-full-width" appearance="fill" style="width:100%; margin-top:60px;">
+            <mat-label>EmployeeId</mat-label>
+            <input matInput type="text" formControlName="Employee_Id">
+            <mat-error>EmployeeId is less then 7 digit </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <mat-form-field class="example-full-width" appearance="fill" style="width:100%;margin-top:60px;">
+            <mat-label>GmailId</mat-label>
+            <input matInput type="text" formControlName="Employee_GmailId">
+            <mat-error>Gmail Id is required</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <mat-form-field class="example-full-width" appearance="fill" style="width:100%;margin-top:60px;">
+            <mat-label>MobileNumber</mat-label>
+            <input matInput type="text" formControlName="EMobileNo">
+            <mat-error>Mobile Number is less then 10 digit </mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <mat-form-field class="example-full-width" appearance="fill" style="width:100%;margin-top:60px;">
+            <mat-label>Address1</mat-label>
+            <input matInput type="text" formControlName="EAddress1">
+            <mat-error>Address1 is required</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <mat-form-field class="example-full-width" appearance="fill" style="width:100%;margin-top:60px;">
+            <mat-label>Address2</mat-label>
+            <input matInput type="text" formControlName="EAddress2">
+            <mat-error>Address2 is required</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <mat-form-field class="example-full-width" appearance="fill" style="width:100%;margin-top:60px;">
+            <mat-label>Pincode </mat-label>
+            <input matInput type="text" formControlName="EPincode">
+            <mat-error>Pincode is less then 7 digit</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <mat-form-field class="example-full-width" appearance="fill" style="width:100%;margin-top:60px">
+            <mat-label>Department</mat-label>
+            <mat-select formControlName="EDepartment">
+                <mat-option value="IT">IT</mat-option>
+                <mat-option value="PayRoll">PayRoll</mat-option> 
+                <mat-option vlaue="CSE">CSE</mat-option>
+                <mat-option value="ECE">ECE</mat-option>
+            </mat-select>
+            <mat-error>Department is required </mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+</form>
+</div>
